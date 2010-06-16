@@ -1,0 +1,87 @@
+@CHARSET "UTF-8";
+
+/**
+ * Example page styling
+ */
+div#examplePage {
+    color: #000;
+    font-family: Verdana, Arial, Helvetica, San-serif;
+    font-size: x-small;
+    text-align: left;
+    width: 750px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+h2 {
+    clear: both;
+}
+
+.example {
+    background: #c3c1c1 none repeat-x scroll left top;
+    border: solid 1px #000;
+    width: 740px;
+    margin: 20px auto;
+    clear: both;
+}
+
+.example legend {
+    font-size: xx-small;
+    font-style: italic;
+    padding: 2px;
+    margin: 0 10px 0;
+    line-height: 14px;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+code {
+    white-space: pre;
+}
+
+.code {
+    font: normal 11px 'Courier New', Courier, Fixed;
+    color: #000;
+    display: block;
+    background-color: #eee;
+    border: 1px solid #000;
+    padding: 0 1em 0;
+    overflow-x: auto;
+}
+
+.html .string {
+    color: #2a00ff;
+}
+
+.html .tag {
+    color: #3f7f7f;
+}
+
+.html .attr {
+    color: #7f007f;
+}
+
+.javascript .string {
+    color: #2a00ff;
+}
+
+.javascript .comment {
+	color: #3F7F5F;
+}
+
+.javascript .keyword {
+    color: #7f0055;
+    text-weight: bold;
+}
+
+.credits {
+    font-size: x-small;
+    color: gray;
+    font-variant: small-caps;
+}

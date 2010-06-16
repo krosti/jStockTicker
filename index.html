@@ -1,111 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>jStockTicker Demo page</title>
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="jquery.jstockticker-1.1.1.js"></script>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>jStockTicker Demo page</title>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="http://progadv.googlecode.com/files/jquery.jstockticker-1.1.js"></script>
 
-<script type="text/javascript">
-    $(function() {
-        $("#ticker").jStockTicker({interval: 45});
-    });
-</script>
-<style type="text/css">
-div#examplePage {
-    color: #000;
-    font-family: Verdana, Arial, Helvetica, San-serif;
-    font-size: x-small;
-    text-align: left;
-    width: 760px;
-    margin: 0 auto;
-    padding: 0;
-}
+        <script type="text/javascript">
+            $(function() {
+                $("#ticker").jStockTicker({interval: 45});
+            });
+        </script>
+        <style type="text/css" media="all">
+            @import "style/examplepage.css";
+            @import "style/jquery.jstockticker.css";
+        </style>
+    </head>
 
-h1 {
-    font-size: 1.8em;
-    font-weight: bold;
-    margin: 10px 0 5px;
-}
+    <body>
+        <div id="examplePage">
+            <h1>jStockTicker (a jQuery Stock Ticker made easy) v1.1.1</h1>
+            <p><b>What is jStockTicker?</b> It is a jQuery plugin to create a horizontally scrolling Stock Ticker</p>
+            <div id="example" class="example">
+                <h3>jquery.jStockTicker-1.1.1.js</h3>
 
-div#example {
-    background: #c3c1c1 none repeat-x scroll left top;
-    width: 740px;
-    margin: 20px 0 3px;
-}
-
-div#example h3 {
-    font-size: xx-small;
-    font-style: italic;
-    padding: 0;
-    margin: 0 10px 0;
-    line-height: 14px;
-}
-
-.container {
-    background: #fff none;
-    border: 1px solid #000;
-    height: 30px;
-    margin: 0 auto;
-    width: 735px;
-}
-
-.container .wrap {
-    width: 720px;
-    left: 10px;
-    top: 10px;
-    overflow: hidden;
-    position: relative;
-    line-height: normal;
-    font-size-adjust: none;
-}
-
-div.stockTicker {
-    font-family: Verdana, Arial, Helvetica, San-serif;
-    font-size: x-small;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
-
-div.stockTicker span {
-    margin: 0 10px 0;
-}
-
-div.stockTicker span.up {
-    color: green;
-    padding-left: 2px;
-}
-
-div.stockTicker span.down {
-    color: red;
-    margin: 0;
-    padding-left: 10px;
-}
-
-div.stockTicker span.eq {
-    margin: 0;
-    padding-left: 10px;
-}
-
-div.stockTicker span.quote {
-    margin: 0;
-    font-weight: bold;
-    padding-left: 10px;
-}
-
-</style>
-</head>
-<body>
-<div id="examplePage">
-    <h1>jStockTicker (a jQuery Stock Ticker made easy) v1.0</h1>
-    <p><b>What is jStockTicker?</b> It is a jQuery plugin to create a horizontally scrolling Stock Ticker</p>
-    <div id="example">
-        <h3>jquery.jStockTicker-1.0.js</h3>
-        
                 <div id="ticker" class="stockTicker">
+
                     <span class="quote">Stock Quotes: </span>
                     <span class="up"><span class="quote">ABC</span> 1.543 0.2%</span>
                     <span class="down"><span class="quote">SDF</span> 12.543 -0.74%</span>
@@ -118,12 +39,22 @@ div.stockTicker span.quote {
                     <span class="up"><span class="quote">QWE</span> 6413.123 0.012%</span>
                     <span class="eq"><span class="quote">CVN</span> 6.3 0.0%</span>
                     <span class="down"><span class="quote">UIT</span> 74.543 -0.321%</span>
+
                 </div>
-        
-    </div>
-    <p class="credits">
-    Code and design by Peter Halasz.
-    </p>
-</div>
-</body>
+
+            </div>
+            <h2>Init code for the above</h2>
+            <div class="javascript code">
+            <code>
+    (<span class="keyword">function</span>() {
+        $(<span class="string">"#ticker"</span>).jStockTicker({interval: 45});
+    });
+            </code>
+
+            </div>
+            <p class="credits">
+                Code and design by Peter Halasz.
+            </p>
+        </div>
+    </body>
 </html>

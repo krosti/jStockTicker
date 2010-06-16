@@ -46,7 +46,7 @@
 			node = next;
 		}
 		
-		var shiftLeftAt = $ticker.children().get(0).outerWidth(true);
+        var shiftLeftAt = $ticker.children().first().outerWidth(true);
 		
 		$.fn.jStockTicker.settings[settings.tickerID].shiftLeftAt = shiftLeftAt;
 		$.fn.jStockTicker.settings[settings.tickerID].left = 0;
@@ -62,7 +62,8 @@
 			if(params.left <= params.shiftLeftAt * -1) {
 				params.left = 0;
 				$ticker.append($ticker.children().get(0));
-				params.shiftLeftAt = $ticker.children().get(0).outerWidth(true);
+                
+				params.shiftLeftAt = $ticker.children().first().outerWidth(true);
 			}
 			
 			$ticker.css('left', params.left + 'px');
